@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --ff-primary: 'Rubik', sans-serif;
+    
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
+    --clr-accent: #034C3C;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+/* General styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+}
+
+body {
+    min-width: 900px;
+    line-height: 1.5;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 35px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+
+#services-subtitle {
+    font-size: 35px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 100px 5px 65px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 95px;
+}
+
+.nav-link {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    display: flex;
+}
+
+
+/* Banner */
+
+.banner {
+    background-position: top;
+    padding: 200px 90px;
+    background-size: cover;
+    background-image: url(images/sky.JPG);
+    margin-bottom: 0;
+}
+  
+#about-banner-img {
+    background-image: url(images/meliora_main_banner_homepage.png);
+}
+
+#services-banner-img {
+    background-image: url(images/colored_bridge.JPG);
+    padding: 200px 90px;
+    margin-bottom: 0;
+
+}
+
+.banner h1 {
+    margin: 0;
+    color: #034C3C;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+    font-size: 42px;
+}
+  
+.banner p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.btn-flat {
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: var(--clr-accent);
+    transition: transform 200ms ease-in-out;
+}
+  
+.btn-flat:hover {
+    background: var(--clr-light);
+    color: var(--clr-accent);
+    transform: scale(1.1);
+    border: 2px solid var(--clr-accent);
+    text-transform: uppercase;
+}
+
+/* My services section */
+
+.my-services {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+    padding-bottom: 2em; 
+    padding: 50px;
+}
+
+.services {
+    margin-bottom: 5em;
+    padding-top: 2em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.my-services h2 {
+    font-size: 35px;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+
+/* Book a Call section */
+
+.contact-form-section {
+    display: flex;
+    padding: 20px 90px;
+    background-color: #ffffff;
+    color: #000000;
+    align-items: center;
+}
+
+.contact-image {
+    margin: 0 auto;
+    width: 435px;
+}
+
+.contact-form-heading {
+    margin: 0;
+    color:#034C3C;
+}
+
+.contact-form-intro {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .contact-image {
+        width: 350px;
+    }
+}
+
+/* Testimonial */
+
+
+.testimonial-container {
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 35px;
+  }
+  
+  .testimonial-slide {
+    display: none;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .banner {
+        padding: 100px 20px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .my-services {
+        padding: 60px 20px;
+    }
+
+    .contact-form-section {
+        padding: 60px 20px;
+    }
+}
+
+/* Privacy Policy */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.portfolio-item-individual h2 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.portfolio-item-individual p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Footer */
+
+.footer {
+    background: var(--clr-accent);
+    color: var(--clr-light);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+    align-items: center;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
