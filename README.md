@@ -1,3 +1,3 @@
-# wellness-freelanceproject
+It was build with HTML, CSS and JavaScript.
 
-You can check my project here - https://inesccorreia.github.io/wellness-freelanceproject/
+You can check it here - https://inesccorreia.github.io/wellness-freelanceproject/
